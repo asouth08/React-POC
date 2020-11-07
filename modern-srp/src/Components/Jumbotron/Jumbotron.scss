@@ -1,0 +1,104 @@
+$jumbotronOverlay: var(--jumbotronOverlay);
+$jumbotronOverlay2: var(--jumbotronOverlay2);
+
+.search-jumbo {
+    padding: 0;
+    background: url('https://www.develop.realtystore.com/resources/t/images/img-hero-bg.jpg');
+    margin: 0;
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    @media (max-width: 767px) {
+        background-image: none;
+        height: 42px;
+    }
+    .container-fluid {
+        background: $jumbotronOverlay;
+        padding: 40px;
+        width: 100%;
+        @media (max-width: 767px) {
+            background: $jumbotronOverlay2;
+            padding: 5px 15px 7px;
+        }
+        .row {
+            .jumbotron-heading {
+                color: #fff;
+                h1 {
+                    font-size: 42px;
+                    margin: 0;
+                }
+                h2 {
+                    font-size: 32px;
+                    margin: 0;
+                    line-height: 1.25;
+                }
+            }
+            form {
+                margin-top: 30px;
+                .form-control {
+                    height: 75px;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 1.4;
+                    padding-left: 25px;
+                    outline: 0;
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow: 0 0.13em 0 0 rgba(0,0,0,.60);
+                    -webkit-box-shadow: 0 0.13em 0 0 rgba(0,0,0,.60);
+                    -moz-box-shadow: 0 .13em 0 0 rgba(0,0,0,.60);
+                    -o-box-shadow: 0 .13em 0 0 rgba(0,0,0,.60);
+                    vertical-align: top;
+                    margin: 1px 8px 16px 0;
+                }
+                .btn {
+                    height: 75px;
+                    font-size: 28px;
+                    font-weight: 600;
+                    min-width: 200px;
+                }
+            }
+            .mobile-refine-btns {
+                .btn {
+                    border-radius: 6px;
+                    font-size: 13px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    margin-right: 5px;
+                    border: 0;
+                    height: 30px;
+                }
+            }
+            .mini-tabs {
+                .nav {
+                    .mini-tab-active {
+                        border: 1px solid #f2f2f2;
+                        border-bottom: 0;
+                        text-shadow: 0 -1px 0 #fff;
+                        background: #fff;
+                        background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#d1d1d1),color-stop(64%,#fff));
+                        background: -webkit-linear-gradient(top,#d1d1d1 0,#fff 64%);
+                        background: -o-linear-gradient(top,#d1d1d1 0,#fff 64%);
+                        background: -ms-linear-gradient(top,#d1d1d1 0,#fff 64%);
+                        background: linear-gradient(to bottom,#d1d1d1 0,#fff 64%);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1d1d1',endColorstr='#ffffff',GradientType=0);
+                        top: 1px;
+                    }
+                    .mini-tab-map {
+                        color: rgba(255,255,255,.75);
+                        padding-right: 0;
+                        padding-left: 8px;
+                        top: 2px;
+                    }
+                    a {
+                        padding: 6px 10px 14px 10px;
+                        font-weight: 700;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

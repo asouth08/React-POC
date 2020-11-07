@@ -1,0 +1,14 @@
+.rdw-editor-wrapper {
+    .DraftEditor-editorContainer {
+        border: 1px solid #F1F1F1;
+        margin-bottom: 15px;
+        min-height: 250px;
+    }
+    .rdw-dropdown-selectedtext {
+        color: #333 !important;
+    }
+}
+textarea {
+    resize: none;
+    min-height: 250px;
+}

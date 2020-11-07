@@ -1,0 +1,15 @@
+.listings {
+    padding: 40px 0 25px 0;
+    border-bottom: 1px solid #ddd;
+    @media (max-width: 767px) {
+        padding: 10px 0;
+        background: #fff !important;
+    }
+    .listing-results {
+        p {
+            display: block;
+            color: #777;
+            font-size: 12px;
+        }
+    }
+}

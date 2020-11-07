@@ -1,0 +1,183 @@
+$font: var(--font);
+
+.listing {
+    padding: 0 10px;
+    @media (max-width: 767px) {
+        border-bottom: 1px solid #ddd;
+    }
+    .card {
+        display: block;
+        padding: 0px;
+        margin-bottom: 20px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0px;
+        -webkit-transition: border .2s ease-in-out;
+        -o-transition: border .2s ease-in-out;
+        transition: border .2s ease-in-out;
+        &:hover {
+            box-shadow: 0 0.24em 12px -4px rgba(55,55,55,.30);
+        }
+        @media (max-width: 767px) {
+            min-height: 120px;
+            position: relative;
+            margin-bottom: 2px;
+            overflow: hidden;
+            border: 0;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+        .card-header {
+            padding: 12px 15px;
+            height: 82px;
+            padding-bottom: 0;
+            background: #fff;
+            border: 0;
+            @media (max-width: 767px) {
+                height: auto;
+                margin-top: 10px;
+                padding: 0;
+                margin-left: 128px;
+            }
+            h3 {
+                font-size: 16px;
+                font-weight: 700;
+                margin: 0;
+                display: block;
+            }
+            p {
+                @media (max-width: 767px) {
+                    text-align: left;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: 400;
+                    margin: 0;
+                }
+                .deal {
+                    vertical-align: top;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                        color: #2174bb !important;
+                        vertical-align: inherit;
+                    }
+                }
+                a {
+                    font-size: 11px;
+                    margin: 0;
+                    color: #555 !important;
+                }
+            }
+            .text-highlight {
+                color: #c00;
+            }
+        }
+        .prop-img {
+            min-height: 210px;
+            position: relative;
+            overflow: hidden;
+            @media (max-width: 767px) {
+                width: 120px;
+                height: 120px;
+                min-height: 120px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #ddd;
+                border-top: 10px solid #fff;
+                border-bottom: 10px solid #fff;
+            }
+            img {
+                width: 110%;
+                height: auto;
+                overflow: auto;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: -50%;
+                bottom: 0;
+                right: -50%;
+                cursor: pointer;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                    position: absolute;
+                    left: -50%;
+                    right: -50%;
+                    bottom: 0;
+                    top: 0;
+                    border-radius: 0;
+                }
+            }
+        }
+        .card-body {
+            padding: 12px 15px;
+            @media (max-width: 767px) {
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+                padding: 0;
+                margin-left: 128px;
+                &:last-child {
+                    padding-bottom: 12px;
+                }
+            }
+            a {
+                color: $font !important;
+            }
+            .col-md-7 {
+                padding-right: 0;
+            }
+            h4 {
+                font-size: 13px;
+                font-weight: 700;
+                margin: 0;
+                line-height: 1.5;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: 400;
+                }
+            }
+            p {
+                font-size: 11px;
+                margin: 0;
+            }
+            h3 {
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+                color: $font;
+                margin: 0;
+            }
+            .btn {
+                font-size: 13px;
+                padding: 6px;
+                @media (max-width: 767px) {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    letter-spacing: -2px;
+                    line-height: 30px;
+                    position: absolute;
+                    top: -15px;
+                    left: -25px;
+                    right: 0;
+                    margin: auto;
+                    span {
+                        position: absolute;
+                        top: 9px;
+                        left: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

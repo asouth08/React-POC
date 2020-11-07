@@ -1,0 +1,75 @@
+$theme: var(--theme);
+$font: var(--font);
+$primary: var(--primary);
+$secondary: var(--secondary);
+$btnPrimary: var(--btnPrimary);
+$btnPrimaryHover: var(--btnPrimaryHover);
+$secondaryTextShadow: var(--secondaryTextShadow);
+$secondaryBoxShadow: var(--secondaryBoxShadow);
+$jumbotronOverlay: var(--jumbotronOverlay);
+$jumbotronOverlay2: var(--jumbotronOverlay2);
+$mobileBtnBorder: var(--mobileBtnBorder);
+$mobileBtnTextShadow: var(--mobileBtnTextShadow);
+$mobileBtnBoxShadow1: var(--mobileBtnBoxShadow1);
+$mobileBtnBoxShadow2: var(--mobileBtnBoxShadow2);
+$mobileBtn1: var(--mobileBtn1);
+$mobileBtn2: var(--mobileBtn2);
+$mobileBtnSecondary: var(--mobileBtnSecondary);
+$mobileBtnSecondaryTextShadow: var(--mobileBtnSecondaryTextShadow);
+
+.text-primary {
+  color: $primary !important;
+}
+
+.btn-primary {
+  background: $btnPrimary;
+  text-shadow: 0 2px 0 $secondaryTextShadow;
+  box-shadow: 0 0.16em 0 0 $secondaryBoxShadow;
+  border: 0;
+  &:hover {
+    background: $btnPrimaryHover;
+    box-shadow: 0 0.16em 0 0 $secondaryBoxShadow;
+    outline: 0;
+    border: 0;
+  }
+  &:active {
+    background: $btnPrimaryHover !important;
+    box-shadow: 0 0.16em 0 0 $secondaryBoxShadow;
+    outline: 0;
+    border: 0;
+  }
+  &:visited {
+    box-shadow: 0 0.16em 0 0 $secondaryBoxShadow;
+    outline: 0;
+    border: 0;
+  }
+  &:focus {
+    background: $btnPrimary;
+    text-shadow: 0 2px 0 $secondaryTextShadow;
+    box-shadow: 0 0.16em 0 0 $secondaryBoxShadow;
+    border: 0;
+  }
+  @media (max-width: 767px) {
+    border-color: $mobileBtnBorder;
+    text-shadow: 0 -1px $mobileBtnTextShadow;
+    box-shadow: 0 1px 0 0 $mobileBtnBoxShadow1 inset, 0 1px 0 $mobileBtnBoxShadow2;
+    -webkit-box-shadow: 0 1px 0 0 $mobileBtnBoxShadow1 1inset, 0 1px 0 $mobileBtnBoxShadow2;
+    background: $mobileBtn2;
+    background-image: linear-gradient(to bottom,$mobileBtn1 0,$mobileBtn1 50%,$mobileBtn2 50%,$mobileBtn2 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.50,$mobileBtn1),color-stop(0.50,$mobileBtn2));
+    background-image: -webkit-linear-gradient(top,$mobileBtn1 0,$mobileBtn1 50%,$mobileBtn2 50%,$mobileBtn2 100%);
+  }
+}
+
+.btn-secondary {
+  @media (max-width: 767px) {
+    background-color: $mobileBtnSecondary;
+    text-shadow: 0 2px 0 $mobileBtnSecondaryTextShadow;
+  }
+}
+
+.bg-primary {
+  background: $btnPrimary !important;
+}
+
+// @import '../src/Components/BootstrapComponents/BootstrapComponents.scss', '../src/Components/Jumbotron/Jumbotron.scss', '../src/Components/Listings/Listings.scss', '../src/Components/Listings/Listing/Listing.scss', '../src/Components/Navigation/Nav.scss', '../src/Components/Footer/Footer.scss', '../src/Components//PolicyContent/PrivacyContent.scss';
